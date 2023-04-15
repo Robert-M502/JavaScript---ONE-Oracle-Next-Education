@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "admin";
+    var contrasenhaRegistrada = "admin";
+
+    var intentos = 1;
+    while (intentos <= 3) {
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else if (intentos < 3){
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        } else {
+            alert("Has realizado los 3 intentos permitidos");
+        }
+        intentos++
+    }
+
+</script>

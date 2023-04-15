@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - IMPRIMIR TODOS LOS NUMEROS PARES 1-100</h1>
+<br>
+
+<script>
+    function saltarlinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarlinea();
+    }
+
+    for (var i=1; i<=100; i++) {
+        if (i % 2 == 0) {
+            imprimir(i);
+        }
+    }
+    imprimir("FIN");
+ </script>
